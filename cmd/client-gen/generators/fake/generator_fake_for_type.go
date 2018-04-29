@@ -278,7 +278,7 @@ func (g *genFakeForType) GenerateType(c *generator.Context, t *types.Type, w io.
 }
 
 // adjustTemplate adjust the origin verb template using the expansion name.
-// TODO: Make the verbs in templates parametrized so the strings.Replace() is
+// TODO: Make the verbs in templates parameterized so the strings.Replace() is
 // not needed.
 func adjustTemplate(name, verbType, template string) string {
 	return strings.Replace(template, " "+strings.Title(verbType), " "+name, -1)
